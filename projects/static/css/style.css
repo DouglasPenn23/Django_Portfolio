@@ -72,3 +72,47 @@ body {
     font-size: 22px;
     padding-right: 5px;
   }
+
+  .name{
+    color: white;
+    text-align: right;
+    font-family: URW Chancery L, cursive;
+    font-size: 22px;
+    padding-right: 5px;
+  }
+  
+  /* Styles the main div containing the image */
+  .main-div{
+    background-image: url(https://cdn.onlyinyourstate.com/wp-content/uploads/2017/01/15123902824_07d19b0463_k.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    object-fit: contain;
+  }
+  
+  /* Styles the text within the main division */
+  .main-div-text{
+    color: black;
+    position: relative;
+    background: transparent;
+    color: black;
+    display: flex;
+    justify-content: center;
+  
+    font-size: 6vh;
+    -webkit-text-stroke: 2px white;
+    margin-bottom: 20px; 
+  }
+  
+  /* Styles the main name header */
+  .name-header{
+    color: black;
+    position: relative;
+    background: transparent;
+    color: black;
+    text-align: center;
+    font-size: 10vh;
+    -webkit-text-stroke: 2px white;
+  }
+  

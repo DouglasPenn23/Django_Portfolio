@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 {% block page_content %}
+
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 
 {% include 'navigation_bar.html' %}
+{% include 'mainDiv.html' %}
 <h1 class="projects_header">Projects</h1>
 <div class="row">
 {% for project in projects %}
