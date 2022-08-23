@@ -102,9 +102,18 @@ body {
     display: flex;
     justify-content: center;
     font-size: 6vh;
-    /* -webkit-text-stroke: 2px white; */
-    margin-bottom: 20px; 
+    /* -webkit-text-stroke: 2px black; */
+    /* margin-bottom: 20px;  */
   }
   
  
-  
+
+  /* This begins the portion of the CSS I will use to style my projects. */
+  .card-title{
+    text-align: center;
+    color: white;
+  }
+
+ .projects_header{
+  margin: 0;
+ }
