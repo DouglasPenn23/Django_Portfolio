@@ -146,53 +146,54 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     border-right: 1px solid #bbb;
-  }
+}
   
-  /* Controls the anchor list elements while they are active */
-  li a.active {
+/* Controls the anchor list elements while they are active */
+li a.active {
     background-color: #04AA6D;
     color: white;
-  }
+}
   
   
-  /* Controls the anchor list elements while they are not active. */
-  li a:hover:not(.active) {
+/* Controls the anchor list elements while they are not active. */
+li a:hover:not(.active) {
     background-color: #555;
     color: white;
-  }
+}
   
-  /* This is supposed to hightlight the active tab but I'm having trouble accomplishing this for whatever reason */
-  .active {
+/* This is supposed to hightlight the active tab but I'm having trouble accomplishing this for whatever reason */
+.active {
     background-color: #04AA6D;
-  }
+}
   
-  /* Media Query to resize the nav bar to vertical on smaller devices */
-  @media screen and (max-width: 600px) {
+/* Media Query to resize the nav bar to vertical on smaller devices */
+@media screen and (max-width: 600px) {
     ul.unordered-nav-list li.right, 
     ul.unordered-nav-list li {float: none;}
-  }
+}
   
-  /* Styles my name or future logo on the navigation bar */
-  .name{
+/* Styles my name or future logo on the navigation bar */
+.name {
     color: var(--secondary-color);
     text-align: right;
     font-family: URW Chancery L, cursive;
     font-size: 22px;
     padding-right: 5px;
-  }
+}
   
-  /* Styles the main div containing the image */
-  .main-div{
+/* Styles the main div containing the image */
+.main-div {
     background-image: url(https://cdn.onlyinyourstate.com/wp-content/uploads/2017/01/15123902824_07d19b0463_k.jpg);
     height: 500px;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     object-fit: contain;
-  }
+    /* border: 1px solid black; */
+}
   
-  /* Styles the text within the main division */
-  .main-div-text{
+/* Styles the text within the main division */
+.main-div-text {
     color: var(--primary-color);
     position: relative;
     top: 50%;
@@ -206,16 +207,44 @@ body {
     font-size: 6vh;
     /* -webkit-text-stroke: 2px black; */
     /* margin-bottom: 20px;  */
-  }
+}
   
+/* Styles the header for the Projects */
+.projects_header {
+    margin: 0;
+    padding: 10px;
+}
+
+
+
+/* 
+
+START OF PROJECT CARD STYLING
+
+*/
  
+/* This will style the card itself */
+.card.mb-2 {
+    max-height: 500px;
+    overflow: auto;
+}
 
-  /* This begins the portion of the CSS I will use to style my projects. */
-  .card-title{
+/* This begins the portion of the CSS I will use to style my projects. */
+.card-title {
     text-align: center;
-    color: white;
-  }
+    color: black;
+}
 
- .projects_header{
-  margin: 0;
- }
+/* This will style the Read More button on the project tiles */
+.btn.btn-primary {
+  /* CSS styles here */
+  display: flex;
+  justify-content: center;
+}
+
+
+/* 
+
+END OF PROJECT CARD STYLING
+
+*/
