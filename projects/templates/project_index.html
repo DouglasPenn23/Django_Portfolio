@@ -11,7 +11,10 @@
 {% for project in projects %}
     <div class="col-md-4">
         <div class="card mb-2">
-            <h5 class="card-title">{{ project.title }}</h5>
+            <div class="three">
+                <h1>{{project.title}}</h1>
+              </div>
+            {% comment %} <h5 class="card-title">{{ project.title }}</h5> {% endcomment %}
             <img class="card-img-top" src="{% static project.image %}">
             <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>

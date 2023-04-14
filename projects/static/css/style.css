@@ -1,55 +1,61 @@
+/* Sets Global CSS Variables */
 :root {
     --primary-color: black;
     --secondary-color: white;
-  }
-
-.projects_header{
-    text-align: center;
 }
 
-/* *{
-    background-color: var(--primary-color);
-} */
-
+/* Sets Global CSS Settings */
 * {
 	box-sizing: border-box;
 }
 
+/* Styles body settings */
 body {
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.6;
 	margin: 0;
 	min-height: 100vh;
+  margin: 0px;
 }
 
+/* 
+
+BEGINS STYLING THE NAVIGATION BAR
+
+*/
+
+/* Styles unordered List */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-
+/* Styles H2, H3 & Anchor elements */
 h2,
 h3,
 a {
 	color: #34495e;
 }
 
+/* Styles Anchor Element */
 a {
 	text-decoration: none;
 }
 
 
-
+/* Styles the logo in the navigation bar */
 .logo {
 	margin: 0;
 	font-size: 1.45em;
 }
 
+/* Styles the main navigation bar */
 .main-nav {
 	margin-top: 5px;
 
 }
+/* Styles Logo & Main Navigation bar Anchors */
 .logo a,
 .main-nav a {
 	padding: 10px 15px;
@@ -58,17 +64,19 @@ a {
 	display: block;
 }
 
+/* Styles Main Navigation Bar Anchor elements */
 .main-nav a {
 	color: #34495e;
 	font-size: .99em;
 }
 
+/* Styles main Navigation Bar Anchor elements on hover  */
 .main-nav a:hover {
 	color: #718daa;
 }
 
 
-
+/* Styles the Header */
 .header {
 	padding-top: .5em;
 	padding-bottom: .5em;
@@ -81,6 +89,12 @@ a {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+
+/* 
+
+END OF NAVIGATION BAR STYLING
+
+*/
 
 
 /* ================================= 
@@ -116,85 +130,76 @@ a {
 }
 
 
-
-/* 
-
-Begins Styling of Navigation Bar
-
-*/
-
-/* Controls the navigation bar  */
-/* Controls the Body (Currently keeping the nav bar w/o gaps) */
-body {
-    margin: 0px;
-    }
-    
-
 /* Controls the Unordered list within the navigation bar */
 .unordered-nav-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    border-bottom: solid 2px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border-bottom: solid 2px;
 }
-    
+  
 /* Controls the list elements themselves within the navigation bar */
 .nav-list {
-    float: left;
+  float: left;
 }
 
 /* Controls the anchor elements within a list */
 .nav-list a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-right: 1px solid #bbb;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 1px solid #bbb;
 }
-  
+
 /* Controls the anchor list elements while they are active */
 li a.active {
-    background-color: #04AA6D;
-    color: white;
+  background-color: #04AA6D;
+  color: white;
 }
-  
-  
+
+
 /* Controls the anchor list elements while they are not active. */
 li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+  background-color: #555;
+  color: white;
 }
-  
+
 /* This is supposed to hightlight the active tab but I'm having trouble accomplishing this for whatever reason */
 .active {
-    background-color: #04AA6D;
+  background-color: #04AA6D;
 }
-  
+
 /* Media Query to resize the nav bar to vertical on smaller devices */
 @media screen and (max-width: 600px) {
-    ul.unordered-nav-list li.right, 
-    ul.unordered-nav-list li {float: none;}
+  ul.unordered-nav-list li.right, 
+  ul.unordered-nav-list li {float: none;}
 }
-  
+
 /* Styles my name or future logo on the navigation bar */
 .name {
-    color: var(--secondary-color);
-    text-align: right;
-    font-family: URW Chancery L, cursive;
-    font-size: 22px;
-    padding-right: 5px;
+  color: var(--secondary-color);
+  text-align: right;
+  font-family: URW Chancery L, cursive;
+  font-size: 22px;
+  padding-right: 5px;
 }
 
 /* 
 
-End of Navigation Bar Styling 
+END OF NAVIGATION BAR STYLING
 
 */
+
+
+
+
+
 
 
 /* 
@@ -238,11 +243,18 @@ End of Styling of Main Division Section
 */
 
 
-  
+
+/* 
+
+START OF PROJECT CARD STYLING
+
+*/
+
 /* Styles the header for the Projects */
 .projects_header {
   margin: 0;
   padding: 10px;
+  text-align: center;
 }
 
 /* Styles the Project rows */
@@ -250,13 +262,6 @@ End of Styling of Main Division Section
   max-width: 100%;
   margin: 10px;
 }
-
-
-/* 
-
-START OF PROJECT CARD STYLING
-
-*/
  
 
 /* This styles the div holding the cards */
@@ -266,7 +271,7 @@ START OF PROJECT CARD STYLING
 }
 
 
-/* This will style the card itself */
+/* This will style the project card itself */
 .card.mb-2 {
   height: 500px;
   overflow: auto;
@@ -284,9 +289,47 @@ max-height: 35vh;
   color: black;
 }
 
+/* Styles the Project Card text */
 .card-text  {
   text-align: center;
 }
+
+/* Styling for Project Titles*/
+/*  !!! Three is tentative the class name for project-titles !!!  */
+/* === HEADING STYLE #3 === */
+.three h1 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.three h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #111;
+}
+
+.three h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: #333;
+}
+
+
+
+
 
 /* This will style the Read More button on the project tiles */
 .btn.btn-primary {
