@@ -23,3 +23,9 @@ def project_detail(request, pk):
         'project': project
     }
     return render(request, 'project_detail.html', context)
+
+
+def education_and_work(request):
+    return render(request, 'education_and_work.html')
+
+
