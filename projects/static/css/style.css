@@ -210,13 +210,15 @@ Begin Styling of Main Division Section
 
 /* Styles the main div containing the image */
 .main-div {
+  margin: 0;
+  padding: 0;
   background-image: url(https://cdn.onlyinyourstate.com/wp-content/uploads/2017/01/15123902824_07d19b0463_k.jpg);
   height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   object-fit: contain;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
   
 /* Styles the text within the main division */

@@ -39,3 +39,5 @@ def about_me(request):
 def project_page(request):
     return render(request, 'projects_page.html')
 
+def homepage(request):
+    return render(request, 'homepage.html')

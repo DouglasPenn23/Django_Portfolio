@@ -5,6 +5,9 @@
 <head>
 	<title>New Page</title>
 </head>
+{% load static %}
+{% include 'navigation_bar.html' %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 <body>
 	<h1>This is a new page</h1>
 	<p>Welcome to my new page</p>
