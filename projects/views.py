@@ -29,3 +29,13 @@ def education_and_work(request):
     return render(request, 'education_and_work.html')
 
 
+def contact(request):
+    return render(request, 'contact_page.html')
+
+def about_me(request):
+    return render(request, 'about_me.html')
+
+
+def project_page(request):
+    return render(request, 'projects_page.html')
+
