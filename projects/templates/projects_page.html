@@ -1,15 +1,39 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>New Page</title>
 </head>
-{% load static %}
-{% include 'navigation_bar.html' %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 
-<body>
-	<h1>This is a new page</h1>
-	<p>Welcome to my new page</p>
-</body>
+{% include 'navigation_bar.html' %}
+
+{% block page_content %}
+<h1 class="projects_header">Projects</h1>
+<div class="row">
+{% for project in projects %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            <div class="three">
+                <h1>{{project.title}}</h1>
+              </div>
+            {% comment %} <h5 class="card-title">{{ project.title }}</h5> {% endcomment %}
+            <img class="card-img-top" src="{% static project.image %}">
+            <div class="card-body">
+                {% comment %} <h5 class="card-title">{{ project.title }}</h5> {% endcomment %}
+                <p class="card-text">{{ project.description }}</p>
+                <a href="{% url 'project_detail' project.pk %}"
+                   class="btn btn-primary">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
+
 </html>

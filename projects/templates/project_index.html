@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 
 {% include 'navigation_bar.html' %}
-{% include 'mainDiv.html' %}
+{% comment %} {% include 'mainDiv.html' %} {% endcomment %}
 <h1 class="projects_header">Projects</h1>
 <div class="row">
 {% for project in projects %}

@@ -37,7 +37,15 @@ def about_me(request):
 
 
 def project_page(request):
-    return render(request, 'projects_page.html')
+    # Retrieve all objects from projects table
+    projects = Project.objects.all()
+    # Defines context dictionary to be used to send information to our template
+    # Every view function created needs to have a context dictionary
+    context = {
+        'projects': projects
+    }
+    # Return a response where you render the response from request, the template & the context
+    return render(request, 'project_index.html', context)
 
 def homepage(request):
     return render(request, 'homepage.html')
