@@ -227,6 +227,8 @@ Begin Styling of Main Division Section
   position: relative;
   top: 50%;
   left: 50%;
+  bottom: 50%;
+  right: 50%;
   /* shifts or translate the center point (X, Y) by (X - 50% of outerWidth, Y - 50% of outerHeight) */
   transform: translate(-50%, -50%);
   background: transparent;
@@ -243,6 +245,58 @@ Begin Styling of Main Division Section
 End of Styling of Main Division Section
 
 */
+
+
+/* 
+
+Begins styling the Full Stack Development Section
+
+*/
+
+/* Styles the banner div containing the Full stack Dev Text */
+.dev-div-banner {
+
+}
+
+/* Styles the text in the developer banner */
+.dev-div-text {
+  text-align: center;
+}
+
+/* Styles the developer div itself */
+.dev-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20vh;
+}
+
+.box {
+  width: 33.33%;
+  height: 100px;
+  text-align: center;
+  box-shadow: 5px 0 0 rgba(0, 0, 0, 0.1), -5px 0 0 rgba(0, 0, 0, 0.1);
+  padding-bottom: 20vh;
+}
+
+.icon-wrapper {
+  padding-bottom: 2vh;
+}
+
+.box-text {
+
+}
+
+.frontend_dev_ul {
+  padding-bottom: 20vh;
+}
+
+/*  
+
+Ends the Styling of the Full Stack Development
+
+*/
+
 
 
 
