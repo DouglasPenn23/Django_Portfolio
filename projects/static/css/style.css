@@ -418,6 +418,48 @@ END OF PROJECT CARD STYLING
 */
 
 
+/* 
+
+BEGINS STYLING THE ABOUT ME PAGE
+
+*/
+
+/* Styles the about me Div */
+.about-me-div {
+ 
+}
+
+/* Styles the div containing the about me selfie */
+.about-me-selfie {
+  display: flex;
+  
+}
+
+/* Styles the selfie image itself */
+.selfie {
+  /* max-height: 25vh; */
+  max-width: 50%;
+}
+
+/* Styles the text next to the selfie  */
+.selfie-text {
+  font-size: 3vh;
+}
+
+/* Styles both the selfie and selfie text to take up half the page */
+.selfie, .selfie-text {
+ flex-basis: 50%;
+ box-sizing: border-box;
+ padding: 0 10px;
+}
+
+/* 
+
+ENDS STYLING THE ABOUT ME PAGE
+
+*/
+
+
 
 /* 
 
