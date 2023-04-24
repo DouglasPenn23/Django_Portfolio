@@ -48,4 +48,4 @@ def project_page(request):
     return render(request, 'project_index.html', context)
 
 def homepage(request):
-    return render(request, 'homepage.html')
+    return render(request, 'index.html')
